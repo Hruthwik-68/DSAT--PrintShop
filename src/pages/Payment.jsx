@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { databases } from "../appwrite/config"; // Import databases from config.js
-import qrImage from "../assets/qr.png";
+import qrImage from "../assets/qr.jpg";
 import { databaseId, collectionId } from "../appwrite/config"; // Import database and collection IDs
 import "./Payment.css";
 
@@ -13,7 +13,7 @@ const Payment = () => {
   const navigate = useNavigate();
 
   const [copied, setCopied] = useState(false);
-  const upiId = "ABC@UPI";
+  const upiId = "dsatm-print.shop@okicici";
 
   const handleCopy = () => {
     navigator.clipboard
